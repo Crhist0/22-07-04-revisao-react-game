@@ -2,7 +2,7 @@ import { Container } from "@mui/material"
 import { ReactElement } from "react"
 
 type ContainerFlexProps = {
-    children: ReactElement[]
+    children: ReactElement[] | ReactElement
 }
 
 function ContainerFlex(props: ContainerFlexProps) {
