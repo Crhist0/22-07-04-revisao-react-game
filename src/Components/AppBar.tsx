@@ -31,7 +31,7 @@ export default function CustomAppBar() {
                 </CustomLink>
               </IconButton>
            }
-          <Typography variant="h6" component="div" sx={{ position:'absolute', left: '50%', transform: "translateX(-50%)" }}>
+          <Typography noWrap variant="h6" component="div" sx={{ position:'absolute', left: '50%', transform: "translateX(-50%)" }}>
             Meu jogo da memória
           </Typography>
         </Toolbar>
