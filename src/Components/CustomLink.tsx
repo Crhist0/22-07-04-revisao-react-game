@@ -14,7 +14,7 @@ type StyledLinkProps = {
 
 const StyledLink = styled(Link)<StyledLinkProps>`
 width: 100%;
-padding: ${props=> props.isAppBar ? '0px' : '8px 16px'};
+padding: ${props=> props.isAppBar ? ' 0px 4px' : '8px 16px'};
 text-decoration: none;
 color: black;
 `
