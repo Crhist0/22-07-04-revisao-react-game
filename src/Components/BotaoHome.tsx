@@ -10,6 +10,7 @@ function BotaoHome(props: BotaoHomeProps) {
     
     return (
             <Button 
+            color="primary"
             sx={{width: '50%', padding: 0}} 
             variant="contained"
             >

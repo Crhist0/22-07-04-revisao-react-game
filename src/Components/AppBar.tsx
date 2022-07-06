@@ -8,15 +8,11 @@ import { Link, useLocation } from 'react-router-dom';
 import CustomLink from './CustomLink';
 
 export default function CustomAppBar() {
-
-
-  const location = useLocation()
-  console.log(location.pathname);
-  
+  const location = useLocation()  
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar color='primary' position="static">
         <Toolbar>
           {location.pathname !== "/" &&
               <CustomLink isappbar to='' >

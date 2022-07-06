@@ -18,7 +18,7 @@ const StyledLink = styled(Link)<StyledLinkProps>`
 width: ${props=> props.ishomebutton ? '100%' : ''};
 padding: ${props=> props.isappbar ? ' 0px' : '8px 16px'};
 text-decoration: none;
-color: black;
+color: ${props => props.theme.palette.text.primary};
 `
 
 
