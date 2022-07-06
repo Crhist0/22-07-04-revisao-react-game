@@ -19,17 +19,16 @@ export default function CustomAppBar() {
       <AppBar position="static">
         <Toolbar>
           {location.pathname !== "/" &&
-              <IconButton
-                size="large"
-                edge="start"
-                color="inherit"
-                aria-label="menu"
-                sx={{ mr: 2 }}
-              >
-                <CustomLink isAppBar to='' >
-                  <ArrowBackIcon />
-                </CustomLink>
-              </IconButton>
+              <CustomLink isappbar to='' >
+                <IconButton
+                  size="large"
+                  edge="start"
+                  color="inherit"
+                  aria-label="menu"
+                >
+                    <ArrowBackIcon />
+                </IconButton>
+              </CustomLink>
            }
           <Typography noWrap variant="h6" component="div" sx={{ position:'absolute', left: '50%', transform: "translateX(-50%)" }}>
             Meu jogo da memória

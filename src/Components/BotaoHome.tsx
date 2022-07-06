@@ -14,6 +14,7 @@ function BotaoHome(props: BotaoHomeProps) {
             variant="contained"
             >
                 <CustomLink 
+                ishomebutton
                 to={props.to}
                 >
                     {props.children}

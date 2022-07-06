@@ -5,16 +5,18 @@ import { Link } from "react-router-dom";
 type CustomLinkProps ={
     to: string;
     children: string | ReactElement
-    isAppBar?: boolean
+    isappbar?: boolean
+    ishomebutton?: boolean
 }
 
 type StyledLinkProps = {
-    isAppBar?: boolean
+    isappbar?: boolean
+    ishomebutton?: boolean
 }
 
 const StyledLink = styled(Link)<StyledLinkProps>`
-width: 100%;
-padding: ${props=> props.isAppBar ? ' 0px 4px' : '8px 16px'};
+width: ${props=> props.ishomebutton ? '100%' : ''};
+padding: ${props=> props.isappbar ? ' 0px' : '8px 16px'};
 text-decoration: none;
 color: black;
 `
@@ -26,7 +28,8 @@ export default function CustomLink(props: CustomLinkProps) {
         <>
                 <StyledLink 
                 to={`/${props.to}`}
-                isAppBar={props.isAppBar}
+                isappbar={props.isappbar}
+                ishomebutton={props.ishomebutton}
                 >
                     {props.children}
                 </StyledLink>
