@@ -1,11 +1,12 @@
 import {} from '@mui/material'
 import ContainerFlex from '../Components/ContainerFlex'
+import TabelaSimples from '../Components/TabelaSimples'
 function Ranking() {
     
     return(
         <>
             <ContainerFlex>
-                <h1>deu certo</h1>
+                <TabelaSimples/>
             </ContainerFlex>
         </>
     )
